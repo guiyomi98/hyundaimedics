@@ -14240,8 +14240,7 @@ article table {
   src: local("Noto Sans KR Bold"), url("../fonts/NotoSansKR-Bold.ttf") format("truetype"); }
 
 body {
-  font-family: "Noto Sans kr", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px; }
+  font-family: "Noto Sans kr", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .navbar {
   background: #fff; }
@@ -14262,8 +14261,17 @@ body {
     .bg-color2-alt {
       background: rgba(0, 168, 147, 0.2); }
 
-.txt-color2 {
-  color: #00A893; }
+.txt-color {
+  color: #000; }
+  .txt-color2 {
+    color: #00A893; }
+
+.txt-regular {
+  font-weight: 400;
+  color: inherit; }
+
+.txt-type2 {
+  font-size: 2.5rem; }
 
 .board-item {
   text-align: center; }
@@ -14310,8 +14318,15 @@ body {
     margin-bottom: 2.13rem; }
 
 .card-item {
-  display: block;
-  height: 500px; }
+  display: block; }
+  .card-item .text-small {
+    height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0; }
 
 .list-bullet {
   display: inline-block;
@@ -14347,5 +14362,9 @@ body {
 .process-circle {
   position: absolute;
   top: 0; }
+
+.icon-new {
+  flex-shrink: 0;
+  width: auto; }
 
 /*# sourceMappingURL=theme.css.map */

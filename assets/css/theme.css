@@ -14309,8 +14309,8 @@ body {
   font-weight: 400; }
 
 .main-bnnr {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   margin: auto; }
   .main-bnnr .tit {
     font-size: 3rem;
@@ -14366,5 +14366,9 @@ body {
 .icon-new {
   flex-shrink: 0;
   width: auto; }
+
+@media screen and (max-width: 768px) {
+  .only {
+    display: none; } }
 
 /*# sourceMappingURL=theme.css.map */

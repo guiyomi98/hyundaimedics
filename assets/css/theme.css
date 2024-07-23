@@ -14240,7 +14240,9 @@ article table {
   src: local("Noto Sans KR Bold"), url("../fonts/NotoSansKR-Bold.ttf") format("truetype"); }
 
 body {
-  font-family: "Noto Sans kr", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: "Noto Sans kr", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
+  overflow-x: hidden; }
 
 .navbar {
   background: #fff; }
@@ -14319,6 +14321,10 @@ body {
 
 .card-item {
   display: block; }
+  .card-item h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .card-item .text-small {
     height: 4rem;
     overflow: hidden;
@@ -14369,6 +14375,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .only {
-    display: none; } }
+    display: none; }
+  .card-wrap:not(.no-gutters) > [class*='col-6']:nth-child(odd) {
+    padding-right: 12px;
+    padding-left: 0.375rem; }
+  .card-wrap:not(.no-gutters) > [class*='col-6']:nth-child(even) {
+    padding-right: 0.375rem;
+    padding-left: 12px; } }
 
 /*# sourceMappingURL=theme.css.map */

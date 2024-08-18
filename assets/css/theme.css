@@ -14373,9 +14373,14 @@ body {
   flex-shrink: 0;
   width: auto; }
 
+.mo-only {
+  display: none; }
+
 @media screen and (max-width: 768px) {
   .only {
     display: none; }
+  .mo-only {
+    display: block; }
   .main-bnnr .tit {
     font-size: 2rem; }
   .card-wrap:not(.no-gutters) > [class*='col-6']:nth-child(odd), .card-wrap:not(.no-gutters) > [class*='col-6']:nth-child(even) {
